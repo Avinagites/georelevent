@@ -56,7 +56,8 @@ CREATE TABLE events (
     created_at timestamp without time zone,
     publisher_id integer,
     properties text DEFAULT '{}'::text,
-    feature_id text
+    feature_id text,
+    processed_at timestamp without time zone
 );
 
 
